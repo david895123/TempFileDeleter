@@ -1,0 +1,85 @@
+﻿<Window x:Class="TempFileDeleter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TempFileDeleter"
+        mc:Ignorable="d"
+        WindowStyle="ToolWindow"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        Title="TempFileDeleter" Height="450" Width="400" >
+
+    <Border Background="{StaticResource BackgroundDarkBrush}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height=" 100"/>
+
+                <RowDefinition Height="200"/>
+
+                <RowDefinition Height="140"/>
+
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Text="File Deleter"
+                       FontSize="40"
+                       Foreground="{StaticResource TextLightBrush}"
+                       />
+
+            <StackPanel Grid.Row="1"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                <CheckBox
+                   Content="Temp Files"
+                    x:Name="TempCheckBox"
+                    Checked="TempCheckBox_Checked"
+                    Unchecked="TempCheckBox_Unchecked"
+                    Style="{StaticResource CheckBoxStyle}">
+                    <CheckBox.LayoutTransform>
+                        <ScaleTransform ScaleX="2" ScaleY="2"/>
+                    </CheckBox.LayoutTransform>
+
+                </CheckBox>
+
+                <CheckBox
+                        Content="Downloads"
+                        x:Name="DownloadsCheckBox"
+                        Checked="DownloadsCheckBox_Checked"
+                        Unchecked="DownloadsCheckBox_Unchecked"
+                        Style="{StaticResource CheckBoxStyle}">
+                    <CheckBox.LayoutTransform>
+                        <ScaleTransform ScaleX="2" ScaleY="2"/>
+                    </CheckBox.LayoutTransform>
+
+                </CheckBox>
+
+                <CheckBox
+                        Content="Recycle Bin"
+                    x:Name="RecycleBinCheckBox"
+                    Checked="RecycleBinCheckBox_Checked"
+                    Unchecked="RecycleBinCheckBox_Unchecked"
+                        Style="{StaticResource CheckBoxStyle}">
+                    <CheckBox.LayoutTransform>
+                        <ScaleTransform ScaleX="2" ScaleY="2"/>
+                    </CheckBox.LayoutTransform>
+
+                </CheckBox>
+
+            </StackPanel>
+
+
+            <Button Grid.Row="2"   
+                    x:Name="DeleteButton"
+                    Click="DeleteButton_Click"
+                    Style="{StaticResource RoundButton}"
+                    Content="Delete"                    
+                    />
+
+        </Grid>
+
+
+    </Border>
+</Window>

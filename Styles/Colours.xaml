@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:TempFileDeleter">
+
+
+    <Color x:Key="BackgroundDark">#131842</Color>
+    <SolidColorBrush x:Key="BackgroundDarkBrush" Color="{StaticResource BackgroundDark}"/>
+
+    <Color x:Key="BackgroundOrange">#FF7F3E</Color>
+    <SolidColorBrush x:Key="BackgroundOrangeBrush" Color="{StaticResource BackgroundOrange}"/>
+
+    <Color x:Key="TextLight">#FFF6E9</Color>
+    <SolidColorBrush x:Key="TextLightBrush" Color="{StaticResource TextLight}"/>
+
+    <Color x:Key="BackgroundLight">#405D72</Color>
+    <SolidColorBrush x:Key="BackgroundLightBrush" Color="{StaticResource BackgroundLight}"/>
+
+    <Color x:Key="BackgroundDarkOrange">#B70404</Color>
+    <SolidColorBrush x:Key="BackgroungDarkOrangeBrush" Color="{StaticResource BackgroundDarkOrange}"/>
+
+</ResourceDictionary>
